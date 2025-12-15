@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_2/color.dart';
 import 'package:test_2/dang_nhap.dart';
 import 'package:test_2/ds.dart';
 import 'package:test_2/form_bt1.dart';
@@ -30,6 +31,7 @@ class _NavigaBarState extends State<NavigaBar> {
   bool _extended = false;
 
   List<Widget> pages = [
+    MyApp1(),
     MyPlace(),
     MyHomePage(),
     MyHomePage2(),
@@ -82,6 +84,10 @@ class _NavigaBarState extends State<NavigaBar> {
             NavigationRailDestination(
               icon: Icon(Icons.book),
               label: Text('Bài 9', style: TextStyle(color: Colors.white)),
+            ),
+            NavigationRailDestination(
+              icon: Icon(Icons.book),
+              label: Text('Bài 10', style: TextStyle(color: Colors.white)),
             ),
           ],
           selectedIndex: _currentIndex,
